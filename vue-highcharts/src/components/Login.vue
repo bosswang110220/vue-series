@@ -1,7 +1,7 @@
 <template>
     <div class="login">
     <el-form ref="AccountFrom" :model="account" :rules="rules" label-position="left" label-width="0px" class="demo-ruleForm login-container">
-     <h3 class="title">系统登录</h3>
+     <h3 class="title">小一登录</h3>
     <el-form-item prop="username">
     <el-input type="text" v-model="account.username" auto-complete="off" placeholder="登录账号"></el-input>
      </el-form-item>
@@ -10,7 +10,7 @@
     </el-form-item>   
      <el-checkbox v-model="checked" checked class="remember">记住密码</el-checkbox> 
     <el-form-item style="width:100%;">
-    <el-button type="primary" style="width:100%;">登录</el-button>
+    <el-button type="success" style="width:100%;">登录</el-button>
     </el-form-item>
     </el-form>
 </div>
@@ -48,7 +48,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .login {
   position: absolute;
   top: 0;
@@ -61,24 +61,40 @@ export default {
 }
 
 .login-container {
+  border-radius: 8px;
   width: 350px;
   margin: 160px auto;
-  margin-left: 35%;
+  margin-left: 36%;
   background-color: #1e4c9f59;
+  height: 300px;
 }
 
 .title {
-  margin: 0px auto 40px auto;
+  padding: 20px;
   text-align: center;
   color: #505458;
 }
 
 .remember {
   float: right;
+  margin-right: 1rem;
   margin-bottom: 13px;
 }
 .el-input__inner {
-     background-color: rgba(255,255,255,0);
+  background-color: rgba(0, 0, 0, 0);
 }
-
+.el-form-item__content {
+  padding: 0rem 1rem;
+}
+.el-form-item__error {
+   padding-top: 0rem;
+   padding: 0.4rem 1rem;
+}
+.el-checkbox__input.is-checked+.el-checkbox__label {
+     color: #f1f5f1db; 
+}
+.el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+    background-color: #85ce61;
+    border-color: #85ce61;
+}
 </style>

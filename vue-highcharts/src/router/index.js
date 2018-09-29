@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import HChart from '@/components/HChart'
 import Login from '@/components/Login'
+import Index from '@/components/Index'
 
 Vue.use(Router)
 
@@ -10,7 +11,12 @@ export default new Router({
   mode: 'history',
   routes: [
     {
-      path: '/',
+      path:'/',
+      name:'Index',
+      component:Index
+    },
+    {
+      path: '/hello',
       name: 'HelloWorld',
       component: HelloWorld
     },{
