@@ -2,7 +2,7 @@
  
 vue整合highchart图表库
 ```
-npm install highcharts --save
+cnpm install highcharts --save
 ```
 
 vue整合Element-UI库
