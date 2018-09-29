@@ -1,0 +1,32 @@
+
+vue 项目初始化
+
+$ vue init webpack vue-highcharts
+
+? Project name (vue-highcharts)
+? Project name vue-highcharts
+? Project description (A Vue.js project)
+? Project description A Vue.js project
+? Author (WangYN <18787141931@163.com>)
+? Author WangYN <18787141931@163.com>
+? Vue build (Use arrow keys)
+? Vue build standalone
+? Install vue-router? (Y/n) y
+? Install vue-router? Yes
+? Use ESLint to lint your code? (Y/n) y
+? Use ESLint to lint your code? Yes
+? Pick an ESLint preset (Use arrow keys)
+? Pick an ESLint preset Standard
+? Set up unit tests (Y/n) n
+? Set up unit tests No
+? Setup e2e tests with Nightwatch? (Y/n) n
+? Setup e2e tests with Nightwatch? No
+? Should we run `npm install` for you after the project has been created? (recom
+? Should we run `npm install` for you after the project has been created? (recom
+mended) npm
+
+   vue-cli · Generated "vue-highcharts".
+
+
+# Installing project dependencies ...
+# ========================
