@@ -6,7 +6,16 @@
         <div class='left'>
             <router-view/>
           </div>  
-         <div class='right'>right</div>
+         <div class='right'>
+           <el-card class="box-card">
+  <div slot="header" class="clearfix">
+    <span>技术栈</span>
+  </div>
+  <div v-for="o in 4" :key="o" class="text item">
+    {{'java ' + o }}
+  </div>
+</el-card>
+         </div>
          </div> 
    <app-footer></app-footer>
     </div>
@@ -38,12 +47,12 @@ body {
   margin: 0px;
   background-image: url(~@/assets/bg.jpg);
   background-size: cover;
-} 
+}
 
 .example-5 {
-  height: 606px;
+  height: 1606px;
   width: 80%;
-  padding: 1% 10%;
+  padding: 0 10%;
 }
 .example-5:after {
   clear: both;
@@ -59,5 +68,26 @@ body {
   height: 100%;
   width: 240px;
   float: right;
+}
+
+.text {
+  font-size: 14px;
+}
+
+.item {
+  margin-bottom: 18px;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+}
+.clearfix:after {
+  clear: both;
+}
+
+.box-card {
+  padding: 1%;
 }
 </style>
