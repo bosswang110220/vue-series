@@ -5,6 +5,8 @@ import HChart from '@/components/HChart'
 import Login from '@/components/Login'
 import Index from '@/components/Index'
 
+
+
 Vue.use(Router)
 
 export default new Router({
